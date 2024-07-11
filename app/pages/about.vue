@@ -5,5 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div>About Page</div>
+  <div>About Page
+    
+  </div>
 </template>
