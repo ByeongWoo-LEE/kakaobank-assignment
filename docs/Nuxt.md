@@ -2,15 +2,18 @@
 
 ## Routing
 
-Next.js pages 처럼 Routing 하는 방법  
-[공식 문서](https://nuxt.com/docs/guide/directory-structure/pages)
+Next.js처럼 Routing 하는 방법  
+[Pages 공식 문서](https://nuxt.com/docs/guide/directory-structure/pages)  
+[Layout 공식 문서](https://nuxt.com/docs/guide/directory-structure/layouts)
 
-app.vue file
+app.vue
 
 ```ts
 <template>
   <div>
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 ```
@@ -19,6 +22,19 @@ app.vue file
 
 ```
 - app
-    ㄴ pages
-        ㄴ index.vue > root page
+    └─ layouts
+        ├─ default.vue
+        └─ custom.vue
+    └─ pages
+        └─ index.vue > root page
+```
+
+about.vue
+
+```
+<script setup lang="ts">
+definePageMeta({
+  layout: 'custom'
+})
+</script>
 ```
