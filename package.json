@@ -9,9 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "typecheck": "npx nuxi typecheck",
-    "lint:eslint": "eslint .",
-    "lint:prettier": "prettier . --check",
-    "lintfix": "eslint . --fix && prettier --write --list-different ."
+    "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "nuxt": "^3.12.3",
