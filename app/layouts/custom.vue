@@ -1,5 +1,3 @@
 <template>
-    <div>
-        Custom layout
-    </div>
+  <div>Custom layout</div>
 </template>
